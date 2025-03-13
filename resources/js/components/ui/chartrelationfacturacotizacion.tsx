@@ -72,7 +72,7 @@ export function ComponentRelation() {
                           y={(viewBox.cy || 0) + 4}
                           className="fill-muted-foreground"
                         >
-                          Visitors
+                          Documentos Creados
                         </tspan>
                       </text>
                     )
@@ -84,12 +84,12 @@ export function ComponentRelation() {
               dataKey="desktop"
               stackId="a"
               cornerRadius={5}
-              fill="var(--color-desktop)"
+              fill="var(--chart-1)"
               className="stroke-transparent stroke-2"
             />
             <RadialBar
               dataKey="mobile"
-              fill="var(--color-mobile)"
+              fill="var(--chart-2)"
               stackId="a"
               cornerRadius={5}
               className="stroke-transparent stroke-2"
