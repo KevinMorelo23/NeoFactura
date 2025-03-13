@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import DialogDemoProductos from '@/components/ui/dialogproductos';
 import { Input } from '@/components/ui/input';
 
 import {
@@ -29,7 +30,7 @@ const productos = [
         nombre: 'Producto 1',
         descripcion: 'Descripcion del producto 1',
         precio: 100000,
-        stock: 10,
+
         creado: '2023-01-01',
         actualizado: '2023-01-01',
     },
@@ -38,7 +39,7 @@ const productos = [
         nombre: 'Producto 2',
         descripcion: 'Descripcion del producto 2',
         precio: 200000,
-        stock: 20,
+
         creado: '2023-01-02',
         actualizado: '2023-01-02',
     },
@@ -47,7 +48,7 @@ const productos = [
         nombre: 'Producto 3',
         descripcion: 'Descripcion del producto 3',
         precio: 30000,
-        stock: 30,
+
         creado: '2023-01-03',
         actualizado: '2023-01-03',
     },
@@ -56,7 +57,7 @@ const productos = [
         nombre: 'Producto 4',
         descripcion: 'Descripcion del producto 4',
         precio: 4000,
-        stock: 40,
+
         creado: '2023-01-04',
         actualizado: '2023-01-04',
     },
@@ -67,7 +68,7 @@ export default function Productos() {
         <AppLayout title="Productos" description="Gestion de Productos" breadcrumbs={breadcrumbs}>
             <Head title="Productos" />
             <div className="m-4 flex flex-row gap-4">
-                <Button variant="secondary">Crear Producto</Button>
+                <DialogDemoProductos />
                 <Input className="w-[200px]" placeholder="Buscar Producto" />
             </div>
             <Table className="w-full p-4">
@@ -78,7 +79,7 @@ export default function Productos() {
                         <TableHead>Nombre</TableHead>
                         <TableHead>Descripcion</TableHead>
                         <TableHead>Precio</TableHead>
-                        <TableHead>Stock</TableHead>
+
                         <TableHead>Creado</TableHead>
                         <TableHead>Actualizado</TableHead>
                         <TableHead>Acciones</TableHead>
@@ -93,7 +94,7 @@ export default function Productos() {
                             <TableCell>
                                 <span>$ </span> {productos.precio}
                             </TableCell>
-                            <TableCell>{productos.stock}</TableCell>
+
                             <TableCell>{productos.creado}</TableCell>
                             <TableCell>{productos.actualizado}</TableCell>
                             <TableCell>

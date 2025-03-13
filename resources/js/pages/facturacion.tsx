@@ -80,8 +80,9 @@ const facturas = [
 
 export default function Facturacion() {
     return (
-        <AppLayout title="Facturación" description="Facturación de productos" breadcrumbs={breadcrumbs}>
+        <AppLayout title="Facturación" description="Facturación de productos"  breadcrumbs={breadcrumbs}>
             <Head title="Facturación" />
+            
             <div className="mt-4 mb-4 flex flex-row gap-4">
                 <DialogDemo />
 

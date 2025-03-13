@@ -1,6 +1,5 @@
-import { Button } from '@/components/ui/button';
+import { DialogDemoCliente } from '@/components/ui/dialogcliente';
 import { Input } from '@/components/ui/input';
-
 import {
     Pagination,
     PaginationContent,
@@ -39,7 +38,7 @@ export default function Clientes() {
         <AppLayout title="Clientes" description="Gestion de Clientes" breadcrumbs={breadcrumbs}>
             <Head title="Clientes" />
             <div className="m-4 flex flex-row gap-4">
-                <Button variant="secondary">Crear Cliente</Button>
+                <DialogDemoCliente />
                 <Input className="w-[200px]" placeholder="Buscar Cliente" />
             </div>
             <Table className="w-full p-4">
